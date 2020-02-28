@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 img {
+    width: 489px;
+    margin: 20px;
+}
+
+input {
+    width: 306px;
+    height: 54px;
+    left: 567px;
+    top: 256px;
+    padding: 10px;
+    margin: 10px;
+    
+    background: #FDFDFD;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+button {
+    width: 306px;
+    height: 54px;
+    left: 567px;
+    top: 412px;
+    padding: 10px;
+    margin: 10px;
+    
+    background: #D8D8D8;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.result {
+    padding: 10px;
+    border: 1px solid #D8D8D8;
+    background: #FDFDFD;
+}
+
