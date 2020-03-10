@@ -7,8 +7,8 @@
     "test": "jest",
     "start": "node index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Tulio Faria",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
     "ejs": "^3.0.1",

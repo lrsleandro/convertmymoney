@@ -1,10 +1,30 @@
 <%- include('header') %>
 
-<form method="GET" action='/cotacao'>
-    <input name="cotacao" placeholder="Valor do Dolar" value="<%= cotacao %>"><br>
-    <input name="quantidade" placeholder="Valor em R$"><br>
-    <button>Converter</button>
+<a href="/"><img class="mb-4" src="/images/logo.png" alt="Convert My Money"></a>
+
+<form class="h3 form-signin font-weight-normal" method="GET" action='/cotacao'>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">$</span>
+        </div>
+        <input name="cotacao" type="text" id="inputCotacao" class="form-control" placeholder="Valor do Dolar" 
+        aria-label="Valor (para o dólar mais próximo)" value="<%= cotacao %>" required autofocus>
+        <div class="input-group-append">
+            <span class="input-group-text">,00</span>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">R$</span>
+        </div>
+        <input name="quantidade" type="text" id="inputQuantidade" class="form-control" placeholder="Valor em R$" required>
+        <div class="input-group-append">
+            <span class="input-group-text">,00</span>
+        </div>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Converter</button>
 </form>
 
 <%- include('footer') %>
-
